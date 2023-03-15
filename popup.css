@@ -51,3 +51,9 @@ p {
   background-color: #ffbebe; 
   color: rgb(0, 0, 0);
 }
+
+.button:focus {
+  background-color: #ff9f9f;
+  color: rgb(0, 0, 0);
+}
+
