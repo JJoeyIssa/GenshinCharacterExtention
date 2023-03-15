@@ -3,6 +3,11 @@
     "name": "Genshin Character Mouse Tag",
     "version": "1.0",
     "description": "WIP: Let's your favourite genshin character follow your mouse!",
+    "permissions": ["activeTab"],
+
+    "action": {
+      "default_popup": "popup.html"
+    },
 
     
     "icons": {
@@ -19,6 +24,15 @@
             "<all_urls>"
           ]
         }
-      ]
+      ],
+
+      "commands": {
+        "_execute_action": {
+          "suggested_key": {
+            "default": "Ctrl+P",
+            "mac": "Command+P"
+          }
+        }
+      }
 
   }

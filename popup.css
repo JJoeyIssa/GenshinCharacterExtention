@@ -1,0 +1,49 @@
+body {
+    width: 20rem;
+    background-color: black;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+    margin: 1rem 0;
+  }
+  
+  li {
+    padding: 0.25rem;
+  }
+  li:nth-child(odd) {
+    background: #80808030;
+  }
+  li:nth-child(even) {
+    background: #ffffff;
+  }
+  
+  h3,
+  p {
+    margin: 0;
+  }
+
+  .text {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-style: normal;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+button {
+  background-color: #ffffff;
+  font-size: 15px;
+  padding: 10px 24px;
+  border-radius: 12px;
+  color: black;
+  border: 2px solid #6b6b6b;
+  float: left;
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: #bababa; /* Green */
+  color: white;
+}
