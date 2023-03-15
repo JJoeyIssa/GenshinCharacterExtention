@@ -1,30 +1,31 @@
 body {
     width: 20rem;
-    background-color: black;
-  }
+    background-color: rgb(255, 255, 255);
+    padding-left: 20px;
+    padding-bottom: 15px;
+}
+
+section {
+  padding-bottom: 10px;
+  float: none;
+}
   
-  ul {
+ul {
     list-style-type: none;
     padding-inline-start: 0;
     margin: 1rem 0;
-  }
+}
   
-  li {
+li {
     padding: 0.25rem;
-  }
-  li:nth-child(odd) {
-    background: #80808030;
-  }
-  li:nth-child(even) {
-    background: #ffffff;
-  }
+}
   
-  h3,
-  p {
-    margin: 0;
-  }
+h3,
+p {
+    margin-bottom: 5px;
+}
 
-  .text {
+.text {
     color: rgb(255, 255, 255);
     font-size: 15px;
     font-style: normal;
@@ -32,11 +33,13 @@ body {
     text-align: center;
 }
 
-button {
+.button {
   background-color: #ffffff;
   font-size: 15px;
-  padding: 10px 24px;
-  border-radius: 12px;
+  padding: 20px 20px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  margin-left: 0;
   color: black;
   border: 2px solid #6b6b6b;
   float: left;
@@ -44,6 +47,6 @@ button {
 }
 
 .button:hover {
-  background-color: #bababa; /* Green */
-  color: white;
+  background-color: #d0c5c5; /* Green */
+  color: rgb(0, 0, 0);
 }
