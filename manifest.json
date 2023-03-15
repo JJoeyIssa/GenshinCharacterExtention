@@ -4,13 +4,16 @@
     "version": "1.0",
     "description": "WIP: Let's your favourite genshin character follow your mouse!",
 
-    
-    "default_icons": {
+    "browser_action": {
+      "default_icon": { 
+
         "16": "/GenshinExtensionSprites/16.png",
         "32": "/GenshinExtensionSprites/32.png",
         "48": "/GenshinExtensionSprites/48.png",
         "128": "/GenshinExtensionSprites/128.png"
-      },
+      }
+    },
+    
 
     "content_scripts": [
         {
