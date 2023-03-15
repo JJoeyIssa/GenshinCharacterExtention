@@ -2,34 +2,32 @@
 
 
 
-function changeImg(character) {
+function changeImg(string) {
 
-    var image = document.getElementById('image')
-
-    if (character == Paimon) {
-        image.src = "/GenshinExtensionSprites/test.png"
+    if (string == Paimon) {
+        document.getElementById('character').src='/GenshinExtensionSprites/test.png';
     }
 
-    if (character == Primogem) {
+    else if (string == Primogem) {
         
-        image.src = "/GenshinExtensionSprites/test.png"
+        document.getElementById('character').src ='/GenshinExtensionSprites/test.png';
     }
 
-    if (character == Venti) {
+    else if (string == Venti) {
 
-        image.src = "/GenshinExtensionSprites/128.png"
+        document.getElementById('character').src ='/GenshinExtensionSprites/128.png';
         
     }
     
-    if (character == Zhongli) {
+    else if (string == Zhongli) {
 
-        image.src = "/GenshinExtensionSprites/test.png"
+        document.getElementById('character').src ='/GenshinExtensionSprites/test.png';
         
     }
     
-    if (character == Raiden) {
+    else if (string == Raiden) {
 
-        image.src = "/GenshinExtensionSprites/test.png"
+        document.getElementById('character').src ='/GenshinExtensionSprites/test.png';
         
     }
 

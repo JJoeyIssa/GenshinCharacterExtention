@@ -57,3 +57,7 @@ p {
   color: rgb(0, 0, 0);
 }
 
+img#image {
+  width: 100px;
+  height: auto;
+}

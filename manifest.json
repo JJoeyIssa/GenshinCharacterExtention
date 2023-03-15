@@ -19,7 +19,9 @@
 
     "content_scripts": [
         {
-          "js": ["scripts/content.js"],
+          "js": [
+            "scripts/content.js"
+          ],
           "matches": [
             "<all_urls>"
           ]
@@ -29,8 +31,8 @@
       "commands": {
         "_execute_action": {
           "suggested_key": {
-            "default": "Ctrl+P",
-            "mac": "Command+P"
+            "default": "Ctrl+J",
+            "mac": "Command+J"
           }
         }
       }
