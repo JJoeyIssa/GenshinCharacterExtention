@@ -1,6 +1,10 @@
 //Track mouse movement 
-
-
+document.getElementById("Paimon").addEventListener("click", changeImg(Paimon));
+document.getElementById("Primo").addEventListener("click", changeImg(Primogem));
+document.getElementById("Venti").addEventListener("click", changeImg(Venti));
+document.getElementById("Zhong").addEventListener("click", changeImg(Zhongli));
+document.getElementById("Raiden").addEventListener("click", changeImg(Raiden));
+document.getElementById("Nahida").addEventListener("click", changeImg(Nahida));
 
 function changeImg(string) {
 
