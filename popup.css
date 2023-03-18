@@ -1,7 +1,14 @@
+/*html body {
+  width: 100%;
+  height: 100%;
+  background: url(GenshinExtensionSprites/16.png);
+}
+*/
+
 body {
     width: 20rem;
     background-color: rgb(255, 255, 255);
-    padding-left: 20px;
+    padding-left: 15px;
     padding-bottom: 15px;
 }
 

@@ -73,19 +73,4 @@ var showRaid = document.getElementById("Raiden");
         }
 */            
 
-var onOffButton = document.getElementById("onOffButton");
-        onOffButton.onclick = function(){
-           if (localStorage.ToneSet === "off") {
-               onOffButton.style.background = "red";
-               localStorage.ToneSet = "on";
-            } else {
-               onOffButton.style.background = "green";
-               localStorage.ToneSet = "off";
-            }
-        }
-            
-    onOffButton.onclick()
-       
-
-
 
