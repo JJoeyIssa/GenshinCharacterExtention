@@ -1,5 +1,5 @@
 {
-    "manifest_version": 2,
+    "manifest_version": 3,
     "name": "Genshin Character Mouse Tag",
     "version": "1.0",
     "description": "WIP: Let's your favourite genshin character follow your mouse!",
@@ -20,7 +20,6 @@
     "content_scripts": [
         {
           "js": [
-            "scripts/content.js",
             "scripts/background.js",
             "scripts/popup.js"
           ],
