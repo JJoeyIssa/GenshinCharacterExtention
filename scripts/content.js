@@ -1,9 +1,10 @@
-const Paimon = document.getElementById("Paimon1");
+/*const Paimon = document.getElementById("Paimon1");
 const Primo = document.getElementById("Primo1");
 const Venti = document.getElementById("Venti1");
 const Zhong = document.getElementById("Zhong1");
 const Raiden = document.getElementById("Raiden1");
 const Nahida = document.getElementById("Nahida1");
+
 
 if (Paimon) {
     Paimon.addEventListener("click", changeImg('Paimon'));
@@ -29,35 +30,62 @@ if (Nahida) {
 
 function changeImg(string) {
 
-    if (string == "Paimon") {
-       // document.getElementById('character').src='/GenshinExtensionSprites/test.png';
-        document.body.style.cursor = '/GenshinExtensionSprites/test.png';
+    if (string == 'Paimon') {
+       document.getElementById('character').src='/GenshinExtensionSprites/test.png';
+       document.body.style.cursor = '/GenshinExtensionSprites/test.png';
     }
 
-    else if (string == "Primogem") {
+    else if (string == 'Primogem') {
         
-        //document.getElementById('character').src ='/GenshinExtensionSprites/test.png';
+        document.getElementById('character').src ='/GenshinExtensionSprites/test.png';
         document.body.style.cursor = '/GenshinExtensionSprites/test.png';
     }
 
-    else if (string == "Venti") {
+    else if (string == 'Venti') {
 
-       // document.getElementById('character').src ='/GenshinExtensionSprites/128.png';
+       document.getElementById('character').src ='/GenshinExtensionSprites/128.png';
        document.body.style.cursor = '/GenshinExtensionSprites/test.png';
     }
     
-    else if (string == "Zhong") {
+    else if (string == 'Zhong') {
 
-        //document.getElementById('character').src ='/GenshinExtensionSprites/test.png';
+        document.getElementById('character').src ='/GenshinExtensionSprites/test.png';
         document.body.style.cursor = '/GenshinExtensionSprites/test.png';
     }
     
-    else if (string == "Raiden") {
+    else if (string == 'Raiden') {
 
-       // document.getElementById('character').src ='/GenshinExtensionSprites/raiden.png';
-       document.body.style.cursor = '/GenshinExtensionSprites/raiden.png';
+        document.getElementById('character').src ='/GenshinExtensionSprites/raiden.png';
+        document.body.style.cursor = '/GenshinExtensionSprites/raiden.png';
     }
 
 }
+
+*/
+
+/*
+var character = document.getElementById("character")
+
+var showRaid = document.getElementById("Raiden");
+
+        showRaid.onclick = function(){
+               character.style.background = "url(/GenshinExtensionSprites/raiden.png)";
+        }
+*/            
+
+var onOffButton = document.getElementById("onOffButton");
+        onOffButton.onclick = function(){
+           if (localStorage.ToneSet === "off") {
+               onOffButton.style.background = "red";
+               localStorage.ToneSet = "on";
+            } else {
+               onOffButton.style.background = "green";
+               localStorage.ToneSet = "off";
+            }
+        }
+            
+    onOffButton.onclick()
+       
+
 
 

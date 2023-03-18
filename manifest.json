@@ -20,7 +20,8 @@
     "content_scripts": [
         {
           "js": [
-            "scripts/content.js"
+            "scripts/content.js",
+            "scripts/background.js"
           ],
           "matches": [
             "<all_urls>"
