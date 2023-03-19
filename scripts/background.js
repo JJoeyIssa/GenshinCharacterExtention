@@ -1,4 +1,4 @@
-chrome.runtime.onMessage.addListerner(data => {
+/*chrome.runtime.onMessage.addListerner(data => {
     switch (data.event) {
         case "Paimon":
             console.log("Change Background");
@@ -15,5 +15,5 @@ chrome.runtime.onMessage.addListerner(data => {
                     
     }
 })
-
+*/
 //chrome.storage.local.set()

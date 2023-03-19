@@ -21,12 +21,14 @@
         {
           "js": [
             "scripts/background.js",
-            "scripts/popup.js"
+            "scripts/popup.js",
+            "scripts/content.js"
           ],
           "matches": [
             "<all_urls>"
           ],
-          "css": ["popup.css"]
+          "css": ["popup.css"],
+          "run_at": "document_end"
         }
       ],
 
