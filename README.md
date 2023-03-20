@@ -5,7 +5,7 @@ Having Fun with google extensions!
 * Learn how to inject code onto the active webpage using a Pop Out screen that lets the user select the specific character they want to see. 
 * Learn how to store information either in a background script or storage to remember the selected character after the Pop Out screen is destroyed. 
 ## Challenges 
-> CSP blocked an inline event handler in my HTML code since I used:  
+1. CSP blocked an inline event handler in my HTML code since I used:  
 ```
 <button onclick="myFunction()">Click me</button>
 ```
