@@ -6,7 +6,9 @@ Having Fun with google extensions!
 * Learn how to store information either in a background script or storage to remember the selected character after the Pop Out screen is destroyed. 
 ## Challenges 
 * CSP blocked an inline event handler in my HTML code since I used:  
-```<button onclick="myFunction()">Click me</button>```
+```
+<button onclick="myFunction()">Click me</button>
+```
 The chrome Content Security Policy does not allow inline javascript. So I had to put my javascript in a .js file and include it in my HTML.
 ## Tutorials Used
 * [Content Scripts, Pop Out, New Tab & Background Page](https://youtu.be/m9mTzpRnOqE). 
