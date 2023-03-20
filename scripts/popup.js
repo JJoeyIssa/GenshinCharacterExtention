@@ -15,7 +15,7 @@ Paimon.onclick = function() {
 Childe.onclick = function() {
 
     document.getElementById('character').src='/GenshinExtensionSprites/childe.png';
-    onsole.log("You Clicked Childe");
+    console.log("You Clicked Childe");
     document.getElementById('overlay').src='/GenshinExtensionSprites/childe.png';
 }
 Venti.onclick = function() {
