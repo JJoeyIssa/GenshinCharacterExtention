@@ -10,24 +10,37 @@ Paimon.onclick = function() {
 
     document.getElementById('character').src='/GenshinExtensionSprites/paimon.png';
     console.log("You Clicked Paimon");
+    
+    //sent a message to background.js to run
+    
     document.getElementById('overlay').src='/GenshinExtensionSprites/paimon.png'; 
 }
 Childe.onclick = function() {
 
     document.getElementById('character').src='/GenshinExtensionSprites/childe.png';
     console.log("You Clicked Childe");
+
+    //sent a message to background.js to run
+
     document.getElementById('overlay').src='/GenshinExtensionSprites/childe.png';
 }
 Venti.onclick = function() {
 
     document.getElementById('character').src='/GenshinExtensionSprites/venti.png';
     console.log("You Clicked Venti");
+
+    //sent a message to background.js to run
+
+
     document.getElementById('overlay').src='/GenshinExtensionSprites/venti.png';
 }
 Zhong.onclick = function() {
 
     document.getElementById('character').src='/GenshinExtensionSprites/zhongli.png';
     console.log("You Clicked Zhong");
+
+    //sent a message to background.js to run
+
     document.getElementById('overlay').src='/GenshinExtensionSprites/zhongli.png';
 }
 Raiden.onclick = function() {
