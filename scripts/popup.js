@@ -63,3 +63,10 @@ Nahida.onclick = function() {
         
     }
 }) */
+
+
+chrome.scripting.executeScript({
+    target: {tabId: tab.id, allFrames: true},
+    files: ['inject.js'],
+    function: inject()
+});
