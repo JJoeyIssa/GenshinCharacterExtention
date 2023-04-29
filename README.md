@@ -36,7 +36,7 @@ On the top right corner, turn on Developer Mode, then click on "Load Unpacked", 
 
 
 ### If Stuck..
-Make sure that the Manifest.js is visible and not located inside any other file apart from the one initially clicked on.
+Make sure that the Manifest.json is directly visible once you initially open the file. If it is located inside any other file apart from the one initially clicked on it will not be able to be located when unpacking.
 
 # Enjoy!
 
