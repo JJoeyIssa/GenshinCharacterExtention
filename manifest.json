@@ -1,9 +1,9 @@
 {
     "manifest_version": 3,
-    "name": "Genshin Character Mouse Tag",
+    "name": "Genshin Character Search Overlay",
     "version": "0.0.1",
-    "description": "WIP: Let's your favourite genshin character follow your mouse!",
-    "permissions": ["scripting", "activeTab"],
+    "description": "Created an underlay of your favourite genshin impact character on your Homepage!",
+    "permissions": ["scripting", "activeTab", "tabs", "storage"],
 
     "action": {
       "default_popup": "popup.html"
@@ -22,11 +22,10 @@
         {
           "js": [
             "scripts/popup.js",
-            "scripts/inject.js",
             "scripts/content.js"
           ],
           "matches": [
-            "<all_urls>"
+            "https://www.google.com/search?"
           ],
           "css": ["popup.css"],
           "run_at": "document_end",

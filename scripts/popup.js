@@ -1,79 +1,148 @@
-// elements corresponding to Buttons
-const Paimon = document.getElementById("Paimon1");
-const Childe = document.getElementById("Childe");
-const Venti = document.getElementById("Venti1");
-const Zhong = document.getElementById("Zhong1");
-const Raiden = document.getElementById("Raiden1");
-const Nahida = document.getElementById("Nahida1");
+// _______
+document.addEventListener("DOMContentLoaded", function () {
+    // elements corresponding to Buttons
+    const Paimon = document.getElementById("Paimon1");
+    const Childe = document.getElementById("Childe");
+    const Venti = document.getElementById("Venti1");
+    const Zhong = document.getElementById("Zhong1");
+    const Raiden = document.getElementById("Raiden1");
+    const Nahida = document.getElementById("Nahida1");
 
-chrome.scripting.executeScript({
-    target: {tabId: tab.id, allFrames: true},
-    files: ['inject.js'],
-    function: inject()
-});
+  
+    Paimon.addEventListener("click", async function () {
+      await chrome.storage.sync.set({ button: "Paimon" });
+      await chrome.scripting.executeScript({
+        target: { url: "https://www.google.com/search?" },
+        func: injectOverlay,
+      });
+    });
 
+      
+    Childe.addEventListener("click", async function () {
+        await chrome.storage.sync.set({ button: "Childe" });
+        await chrome.scripting.executeScript({
+          target: { url: "https://www.google.com/search?" },
+          func: injectOverlay,
+        });
+      });
 
-Paimon.onclick = function() {
+      
+    Venti.addEventListener("click", async function () {
+        await chrome.storage.sync.set({ button: "Venti" });
+        await chrome.scripting.executeScript({
+          target: { url: "https://www.google.com/search?" },
+          func: injectOverlay,
+        });
+    });
 
-    document.getElementById('character').src='/GenshinExtensionSprites/paimon.png';
-    console.log("You Clicked Paimon");
-    
-    //sent a message to inject.js to run
-    inject(paimon);
+      
+    Zhong.addEventListener("click", async function () {
+        await chrome.storage.sync.set({ button: "Zhong" });
+        await chrome.scripting.executeScript({
+          target: { url: "https://www.google.com/search?" },
+          func: injectOverlay,
+        });
+      });
 
-    document.getElementById('overlay').src='/GenshinExtensionSprites/paimon.png'; 
-}
-Childe.onclick = function() {
-
-    document.getElementById('character').src='/GenshinExtensionSprites/childe.png';
-    console.log("You Clicked Childe");
-
-    //sent a message to inject.js to run
-    inject(childe);
-
-    document.getElementById('overlay').src='/GenshinExtensionSprites/childe.png';
-}
-Venti.onclick = function() {
-
-    document.getElementById('character').src='/GenshinExtensionSprites/venti.png';
-    console.log("You Clicked Venti");
-
-    //sent a message to inject.js to run
-    inject(venti);
-
-    document.getElementById('overlay').src='/GenshinExtensionSprites/venti.png';
-}
-Zhong.onclick = function() {
-
-    document.getElementById('character').src='/GenshinExtensionSprites/zhongli.png';
-    console.log("You Clicked Zhong");
-
-    //sent a message to background.js to run
-    inject(zhong);
-
-    document.getElementById('overlay').src='/GenshinExtensionSprites/zhongli.png';
-}
-Raiden.onclick = function() {
-
-    document.getElementById('character').src='/GenshinExtensionSprites/raiden.png';
-    console.log("You Clicked Raiden");
-
-    inject(raiden);
-
-    document.getElementById('overlay').src='/GenshinExtensionSprites/raiden.png';
-}
-Nahida.onclick = function() {
-
-    document.getElementById('character').src='/GenshinExtensionSprites/nah.png';
-    console.log("You Clicked Nahida");
-    inject(nah);
-    document.getElementById('overlay').src='/GenshinExtensionSprites/nah.png';
-}
-
-/*chrome.storage.local.get(["selection"], (result) => {
-    const {selection} = result;
-
-    if (selection) {
-        
-    }
-}) */
+      
+    Raiden.addEventListener("click", async function () {
+        await chrome.storage.sync.set({ button: "Raiden" });
+        await chrome.scripting.executeScript({
+          target: { url: "https://www.google.com/search?" },
+          func: injectOverlay,
+        });
+    });
+  
+    Nahida.addEventListener("click", async function () {
+      await chrome.storage.sync.set({ button: "Nahida" });
+      await chrome.scripting.executeScript({
+        target: { url: "https://www.google.com/search?" },
+        func: injectOverlay,
+      });
+    });
+  });
+  
+  function injectOverlay() {
+    chrome.storage.sync.get("button", function (result) {
+      if (result.button == "Paimon") {
+        const underlay = document.createElement("div");
+        document.getElementById('character').src='/GenshinExtensionSprites/paimon.png';
+        underlay.style.backgroundImage.src =
+        '/GenshinExtensionSprites/paimon.png';
+        underlay.style.backgroundRepeat = "no-repeat";
+        underlay.style.backgroundSize = "cover";
+        underlay.style.position = "fixed";
+        underlay.style.top = "0";
+        underlay.style.left = "0";
+        underlay.style.width = "100%";
+        underlay.style.height = "100%";
+        document.body.appendChild(underlay);
+      } else if (result.button == "Childe") {
+        const underlay = document.createElement("div");
+        document.getElementById('character').src='/GenshinExtensionSprites/childe.png';
+        underlay.style.backgroundImage.src =
+        '/GenshinExtensionSprites/childe.png';
+        underlay.style.backgroundRepeat = "no-repeat";
+        underlay.style.backgroundSize = "cover";
+        underlay.style.position = "fixed";
+        underlay.style.top = "0";
+        underlay.style.left = "0";
+        underlay.style.width = "100%";
+        underlay.style.height = "100%";
+        document.body.appendChild(underlay);
+      } else if (result.button == "Venti") {
+        const underlay = document.createElement("div");
+        document.getElementById('character').src='/GenshinExtensionSprites/venti.png';
+        underlay.style.backgroundImage.src=
+        '/GenshinExtensionSprites/childe.png';
+        underlay.style.backgroundRepeat = "no-repeat";
+        underlay.style.backgroundSize = "cover";
+        underlay.style.position = "fixed";
+        underlay.style.top = "0";
+        underlay.style.left = "0";
+        underlay.style.width = "100%";
+        underlay.style.height = "100%";
+        document.body.appendChild(underlay);
+      } else if (result.button == "Zhong") {
+        const underlay = document.createElement("div");
+        document.getElementById('character').src='/GenshinExtensionSprites/zhongli.png';
+        underlay.style.backgroundImage.src=
+        '/GenshinExtensionSprites/zhongli.png';
+        underlay.style.backgroundRepeat = "no-repeat";
+        underlay.style.backgroundSize = "cover";
+        underlay.style.position = "fixed";
+        underlay.style.top = "0";
+        underlay.style.left = "0";
+        underlay.style.width = "100%";
+        underlay.style.height = "100%";
+        document.body.appendChild(underlay);
+      } else if (result.button == "Raiden") {
+        const underlay = document.createElement("div");
+        document.getElementById('character').src='/GenshinExtensionSprites/raiden.png';
+        underlay.style.backgroundImage.src=
+        '/GenshinExtensionSprites/raiden.png';
+        underlay.style.backgroundRepeat = "no-repeat";
+        underlay.style.backgroundSize = "cover";
+        underlay.style.position = "fixed";
+        underlay.style.top = "0";
+        underlay.style.left = "0";
+        underlay.style.width = "100%";
+        underlay.style.height = "100%";
+        document.body.appendChild(underlay);
+      } else if (result.button == "Nahida") {
+        const underlay = document.createElement("div");
+        document.getElementById('character').src='/GenshinExtensionSprites/nah.png';
+        underlay.style.backgroundImage.src=
+        '/GenshinExtensionSprites/nah.png';
+        underlay.style.backgroundRepeat = "no-repeat";
+        underlay.style.backgroundSize = "cover";
+        underlay.style.position = "fixed";
+        underlay.style.top = "0";
+        underlay.style.left = "0";
+        underlay.style.width = "100%";
+        underlay.style.height = "100%";
+        document.body.appendChild(underlay);
+      }
+    });
+  }
+  //________
