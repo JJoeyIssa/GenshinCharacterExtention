@@ -1,5 +1,5 @@
-# GenshinCharacterExtention
-Having Fun with google extensions! 
+# Genshin Character Extention
+Allowing Dedicated Lore Enthusiasts' to have quick access to the main character's fandom pages.
 # 0.02
 Currently finished. Might go back later and add more characters or make it more interactive, but for now, I've completed my goal of working with extensions. Bonus: I found some cool tools and learnt new methods of implementation that I will use for future projects. 
 ## Goals
