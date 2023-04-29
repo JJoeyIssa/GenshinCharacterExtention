@@ -15,6 +15,29 @@ Currently finished. Might go back later and add more characters or make it more 
 ## Tutorials Used
 * [Content Scripts, Pop Out, New Tab & Background Page](https://youtu.be/m9mTzpRnOqE). 
 * [Saving and retrieving data in the background](https://youtu.be/dFVxUrd1wzA). 
+
 ## How to Use
+**1. Download all Files**
+
+**2. Navigate to Manage Extentions**
+
+Click the Puzzel Piece Located at the top right corner of your chrome webpage
+
+![Puzzel Peice](https://miro.medium.com/v2/resize:fit:1000/0*7ftPt1OUoJMOqjXN)
+
+Navigate down to "Manage Extensions"
+
+![Manage Extensions](https://media.idownloadblog.com/wp-content/uploads/2023/01/See-installed-Chrome-extensions.png)
+
+On the top right corner, turn on Developer Mode, then click on "Load Unpacked", and selected your downloaded files.
+
+![Developer Mode](https://wd.imgix.net/image/BrQidfK9jaQyIHwdw91aVpkPiib2/iYdLKFsJ1KSVGLhbLRvS.png?auto=format)
+
+
+
+### If Stuck..
+Make sure that the Manifest.js is visible and not located inside any other file apart from the one initially clicked on.
+
+# Enjoy!
 
 
