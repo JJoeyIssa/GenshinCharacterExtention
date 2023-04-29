@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self';" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./popup.css" />
@@ -10,23 +11,27 @@
     <h1>Genshin Impact Character Campanion Extension</h1>
     <h2>Developed by JJoeyIssa</h2>
 
-  <section>
-    <p style="font-size: 14px; padding-bottom: 2px;">Select your Character</p>
-    <tr>
-      <td><button id="Paimon1" class="button">Paimon</button>
-      <td><button id="Childe" class="button">Childe</button>
-      <td><button id="Venti1" class="button">Venti</button>
-      <td><button id="Zhong1" class="button">Zhongli</button>
-      <td><button id="Raiden1" class="button">Raiden</button>
-      <td><button id="Nahida1" class="button">Nahida</button>
-    </tr>
-  </section>
-  
-  <img id="character" src="/GenshinExtensionSprites/default.png" style="width: 310px; height: 290px; margin-top: 5px; margin-bottom: 10px;" alt="Genshin Impact App Image"></img>
+    <section>
+      <p style="font-size: 14px; padding-bottom: 2px;">Select your Character</p>
+      <tr>
+        <td><button id="Paimon1" class="button">Paimon</button>
+        <td><button id="Childe" class="button">Childe</button>
+        <td><button id="Venti1" class="button">Venti</button>
+        <td><button id="Zhong1" class="button">Zhongli</button>
+        <td><button id="Raiden1" class="button">Raiden</button>
+        <td><button id="Nahida1" class="button">Nahida</button>
+      </tr>
+    </section>
 
-  </body>  
+    <img
+      id="character"
+      src="/GenshinExtensionSprites/default.png"
+      style="width: 310px; height: 290px; margin-top: 5px; margin-bottom: 10px;"
+      alt="Genshin Impact App Image"
+    />
+
     <script src="scripts/content.js"></script>
     <script src="scripts/background.js"></script>
     <script src="scripts/popup.js"></script>
-    
-  </html>
+  </body>
+</html>
