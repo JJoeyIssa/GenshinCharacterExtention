@@ -1,5 +1,5 @@
-# GenshinCharacterExtention
-Having Fun with google extensions! 
+# Genshin Character Extention
+Allowing Dedicated Lore Enthusiasts' to have quick access to the main character's fandom pages.
 # 0.02
 Currently finished. Might go back later and add more characters or make it more interactive, but for now, I've completed my goal of working with extensions. Bonus: I found some cool tools and learnt new methods of implementation that I will use for future projects. 
 ## Goals
@@ -36,7 +36,7 @@ On the top right corner, turn on Developer Mode, then click on "Load Unpacked", 
 
 
 ### If Stuck..
-Make sure that the Manifest.js is visible and not located inside any other file apart from the one initially clicked on.
+Make sure that the Manifest.json is directly visible once you initially open the file. If it is located inside any other file apart from the one initially clicked on it will not be able to be located when unpacking.
 
 # Enjoy!
 
