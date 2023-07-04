@@ -1,7 +1,7 @@
 # Genshin Character Extention
 Allowing Dedicated Lore Enthusiasts' to have quick access to the main character's fandom pages.
 # 0.02
-Currently finished. Might go back later and add more characters or make it more interactive, but for now, I've completed my goal of working with extensions. Bonus: I found some cool tools and learnt new methods of implementation that I will use for future projects. 
+Currently finished. Might go back later and add more characters or make it more interactive, but for now, I've completed my goal of working with extensions. Bonus: I found some cool tools and learnt new methods for implementation of interactive features that I will use for future projects. 
 ## Goals
 * Create a fun google extension that takes the user directly to their favourite [Genshin Impact](https://genshin.hoyoverse.com/en/) Character's fandom page from any of their active chrome webpages. 
 * Learn how to inject code onto the active webpage using a Pop Out screen that lets the user select the specific character they want to see. [Done!]
